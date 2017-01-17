@@ -37,15 +37,23 @@
     border-width: 0 0 1px;
 }
 .section {
-	position: relative;
-	background: #fff;
+    position: relative;
+    background: #fff;
+    padding: 30px 0;
 }
 .section.promo {
-	margin-top: 768px;
+    margin-top: 768px;
+}
+.section.work {
 }
 .footer {
 	position: relative;
 	background: #232137;
+}
+.footer .copyright p {
+    padding: 0;
+    margin: 0;
+    line-height: 36px;
 }
 /* 手机分辨率*/
 @media (max-width: 767px) {
@@ -66,8 +74,11 @@
 	.header h1.logo {
 		float: none;
 		text-align: center;
+                line-height: 66px;
 	}
-	
+        .header .nav >li >a {
+             line-height: 36px;
+        }	
 }
 /* 桌面及以上分辨率*/
 @media (min-width: 992px) {
