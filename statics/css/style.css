@@ -1,7 +1,7 @@
 .bg-top {
 	background-image: url(../images/bg-top.jpg);
 	background-size: cover;
-	height: 780px;
+	height: 768px;
 	position: fixed;
 	left:0;
 	top:0;
@@ -35,6 +35,17 @@
 .navbar-fixed-top {
     top: 0;
     border-width: 0 0 1px;
+}
+.section {
+	position: relative;
+	background: #fff;
+}
+.section.promo {
+	margin-top: 768px;
+}
+.footer {
+	position: relative;
+	background: #232137;
 }
 /* 手机分辨率*/
 @media (max-width: 767px) {
