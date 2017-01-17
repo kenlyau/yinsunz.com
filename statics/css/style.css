@@ -1,5 +1,70 @@
-.top {
+.bg-top {
 	background-image: url(../images/bg-top.jpg);
 	background-size: cover;
-	min-height: 400px;
+	height: 780px;
+	position: fixed;
+	left:0;
+	top:0;
+	width: 100%;
+}
+.header .nav>li>a {
+	color: #fff;
+}
+.header .nav>li>a:hover, .header .nav>li>a:focus {
+	color: #2782f4;
+    text-decoration: none;
+	background: none;
+	transition: all 0.2s;
+	transform: scale(1.2);
+}
+.header  .logo {
+	float: left;
+}
+.header .logo a:hover {
+	text-decoration: none;
+}
+.navbar-toggle .icon-bar {
+	background: #fff;
+}
+.navbar-fixed-bottom, .navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+/* 手机分辨率*/
+@media (max-width: 767px) {
+	.navbar-collapse {
+		position: absolute;
+		width: 100%;
+		margin-left: -15px;
+		text-align: center;
+	}
+	
+}
+
+/* 平板及以上分辨率*/
+@media (min-width: 768px) {
+	.header.navbar-fixed-top {
+		position: relative;
+	}
+	.header h1.logo {
+		float: none;
+		text-align: center;
+	}
+	
+}
+/* 桌面及以上分辨率*/
+@media (min-width: 992px) {
+	.header.navbar-fixed-top {
+	    position: fixed;
+	}
+	.header h1.logo {
+        float: left;
+        margin: inherit;
+	}
 }
