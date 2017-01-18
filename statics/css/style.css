@@ -1,7 +1,12 @@
+html,body {
+	height: 100%;
+	font:14px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+}
 .bg-top {
 	background-image: url(../images/bg-top.jpg);
 	background-size: cover;
-	height: 768px;
+	background-position: center;
+	height: 100%;
 	position: fixed;
 	left:0;
 	top:0;
@@ -38,11 +43,13 @@
 }
 .section {
     position: relative;
+	width: 100%;
     background: #fff;
     padding: 30px 0;
 }
 .section.promo {
-    margin-top: 768px;
+    height: 100%;
+	background: transparent;
 }
 .section.work {
 }
@@ -63,7 +70,18 @@
 		margin-left: -15px;
 		text-align: center;
 	}
-	
+	.header.navbar-fixed-top {
+		position: absolute;
+		width: 100%;
+	}
+	.bg-top {
+		position: relative;
+	}
+	.section.promo {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
 
 /* 平板及以上分辨率*/
