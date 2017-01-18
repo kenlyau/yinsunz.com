@@ -16,11 +16,14 @@ html,body {
 	color: #fff;
 }
 .header .nav>li>a:hover, .header .nav>li>a:focus {
-	color: #2782f4;
+	color: #2782f4!important;
     text-decoration: none;
 	background: none;
 	transition: all 0.2s;
 	transform: scale(1.2);
+}
+.header.scrolled .nav>li>a {
+	color: #464646;
 }
 .header  .logo {
 	float: left;
@@ -92,7 +95,13 @@ html,body {
 	.header h1.logo {
 		float: none;
 		text-align: center;
-                line-height: 66px;
+		font-size: 16px;
+		background: #fff;
+		padding: 0 10px 10px 10px;
+	}
+	.header h1 .text {
+		display: block;
+		text: center;
 	}
         .header .nav >li >a {
              line-height: 36px;
@@ -102,6 +111,15 @@ html,body {
 @media (min-width: 992px) {
 	.header.navbar-fixed-top {
 	    position: fixed;
+	}
+	.header.scrolled {
+		background: #fff;
+		z-index: 1000;
+		height: 66px;
+		top: 0;
+		-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 	}
 	.header h1.logo {
         float: left;

@@ -13,7 +13,10 @@
     <header class="header navbar-fixed-top">
 	    <div class="container">
 		    <h1 class="logo">
-			    <a href="/"><span class="text">Yin</span></a>
+			    <a href="/">
+				    <img src="./statics/images/logo.png" width="36">
+				    <span class="text">岭尚智</span>
+				</a>
 			</h1>
 			<nav class="main-nav navbar-right" role="naviation">
 			    <div class="navbar-header">
@@ -82,5 +85,15 @@
 	</footer>
 	<script src="./statics/js/jquery.min.js" type="text/javascript"></script>
 	<script src="./statics/js/bootstrap.min.js" type="text/javascript"></script>
+	<script>
+	    var $window = $(window);
+	    $window.on("scroll load", function(e) {
+		    if($window.scrollTop() > 10) {
+			    $("header").addClass("scrolled");
+			}else{
+			    $("header").removeClass("scrolled");
+			}
+		})
+	</script>
 </body>	
 </html>
