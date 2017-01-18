@@ -77,6 +77,9 @@ html,body {
 		position: absolute;
 		width: 100%;
 	}
+	.header h1.logo {
+		font-size: 14px;
+	}
 	.bg-top {
 		position: relative;
 	}
