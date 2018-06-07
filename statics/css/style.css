@@ -44,6 +44,7 @@ html,body {
     top: 0;
     border-width: 0 0 1px;
 }
+
 .section {
     position: relative;
 	width: 100%;
@@ -81,6 +82,26 @@ html,body {
 	text-align: center;
 	padding: 10px 20px;
 	line-height: 26px;
+}
+.product {
+	padding-top: 20px;
+}
+.product hr {
+	border-top: 1px solid #2782f4;
+	opacity: 0.3;
+}
+.product h3 {
+	color: #666666;
+}
+.product ul li {
+	line-height: 32px;
+}
+.product .c {
+	color: #ff3300;
+	font-size: 18px;
+}
+.product .thumbnail {
+	border: 0;
 }
 .footer {
 	position: relative;
@@ -146,9 +167,9 @@ html,body {
 		z-index: 1000;
 		height: 66px;
 		top: 0;
-		-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-		-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-		box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+		-webkit-box-shadow: 0 0 1px rgba(124, 124, 124, 0.5);
+		-moz-box-shadow: 0 0 1px rgba(124, 124, 124, 0.5);
+		box-shadow: 0 0 1px rgba(124, 124, 124, 0.5);
 	}
 	.header h1.logo {
         float: left;
